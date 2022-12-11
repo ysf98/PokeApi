@@ -1,0 +1,18 @@
+.card{
+    box-shadow: 1px 1px 5px rgb(148, 142, 142);
+    margin: 5px;
+}
+
+.cards{
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: auto;
+    padding: auto;
+}
+
+.cards-item{
+    display: flex;
+    padding: 1rem;
+}
