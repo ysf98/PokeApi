@@ -3,7 +3,7 @@ import './App.css';
 import Pokemon from './components/pages/Pokemons';
 
 
-import { Link, Route } from "wouter"
+im
 
 
 
