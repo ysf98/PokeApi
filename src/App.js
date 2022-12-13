@@ -1,22 +1,23 @@
 
+import React from 'react'
 import './App.css';
-import Pokemon from './components/pages/Pokemons';
+import ListOfGifs from './components/ListOfGifs';
 
-
-im
-
-
+import {Link, Route} from "wouter";
 
 export default function App() {
+  
   return (
     <div className="App">
       <section className="App-content">
-        <h1>App</h1>
-        <Link to='/pokemons'>Pokemons</Link>
-        <Route component={Pokemon} path='/pokemons'/>
-
-        <Link to='/App'>Inicio</Link>
-        <Route component={App} path='/'/>
+        <h1>Gifs</h1>
+        <Link to='/gif/cr7'>El bicho</Link>
+        <Link to='/gif/worldcup'>Mundial</Link>
+        <Link to='/gif/cats'>Gatos</Link>
+        <Route 
+        component={ListOfGifs}
+        path ="/gif/:keyword"/>
+        
       </section>
     </div>
   );
