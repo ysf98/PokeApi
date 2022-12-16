@@ -11,9 +11,9 @@ export default function getGifs({keyword = 'morty'} = {}) {
         const {data} = response
         if (Array.isArray(data)) {
             const gifs= data.map(image =>{
-                const {images, title} = image
+                const {images, title, id} = image
                 const {url}=images.downsized_medium
-                return {title, url}
+                return {title, url, id}
             })
             return gifs
         }
